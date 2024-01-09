@@ -1,0 +1,27 @@
+body{
+    background-image: url('../image/an-ba-to-com.jpg') ;
+    background-size:auto;
+    
+
+
+    
+}
+
+h1{
+color:blue ;
+
+}
+p{
+    color: rgba(145, 98, 53, 0.829);
+    font-size: 50px;
+    line-height: 1.5; /* do cao của dòng */
+    font-size: Arial , Helvetica , sans-serif; /* phong chữ */
+    text-align: left ; /* căn trái */ /* Justify : căn đều  */ /*right : căn phải */
+    text-decoration: line-through; /*underline: gạch chân*/ /*overline:gạch chân*   / /* line-through:đường cắt ngang*/
+    text-transform: none; /*chuyển đổi văn bản : uppercase louwercase capitalize */
+    font-weight: normal;  /*in đậm :   100 - thin, 200 semi -light, 300 - light,400 normal,500 medium , 600 semibold , 700 bold , 800 - extraboold , 900 black */ 
+    background-color: blueviolet; /* nen cua chu */
+
+
+
+}
