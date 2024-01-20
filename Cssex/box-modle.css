@@ -1,0 +1,45 @@
+div{
+
+
+    width: calc(25% - 82px); /* (30px + 1 +10)x2 = 82 */
+    /*height: 400px;*/ 
+    float: left; /*dồn khối lại một góc*/
+    margin: 30px;/* khoảng cách giữa các khối */ /*theo chieu king dong ho*/ 
+     /* margin: 100px , 30px ,15px , 5px ; neu bi thieu thi no se lay thang doi dien*/
+    /*margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 40px;*/
+    border: 1px solid gold; /*khung vien*/
+    padding: 10px;/*khoảng cách giữa khối và viền trang */
+    box-shadow: 0 0 5px gray;
+    border-radius: 10px;
+    transition: all 300ms; /* thoi gian chuyen trang thai*/
+
+}
+div:hover{ 
+    /*div:hover khi nguoi dung dua chuoi vao vi tri cua khoi*/
+    background-color: rgb(153, 153, 207);
+    box-shadow: 0 0 5px rgb(221, 15, 50);
+    transform: translate(100px); /*dich sang ben phai*/  /* giong nhu animation vi tri gốc ko thay doi*/
+    transform: scale(1.5);/* tang kich co */
+  
+}
+img{
+    max-width: 100%; 
+    height: auto;
+  
+
+}
+div a{
+    color: aqua;
+
+
+
+}
+#deptrai{
+    background-color: red;
+}
+.xnxx {
+    background-color: black;
+}
