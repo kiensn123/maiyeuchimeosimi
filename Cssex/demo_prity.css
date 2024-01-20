@@ -1,11 +1,36 @@
 
-a{
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+
+    background-color: aliceblue;
+    font-size: 14px;
+    font-family:"Noto Sans", sans-serif ;
+    font-weight: 400;
+    line-height:  1.35;
+}
+
+img{
+    max-width: 100%;
+}
+a:hover{
     color: blue;
 }
 
-.box #ph a{
-    
-    color: chartreuse;
+.section{
+    float: left;     /* full man hinh*/
+    width: 100%;
 }
+.container{
+    float: none;
+    width: 1200px;
+    margin:0 auto ;
+}
+.section .container .boxleft{
 
+}
 
