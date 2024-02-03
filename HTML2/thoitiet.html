@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời Tiết </title>
+    <link rel="stylesheet" href="cssladaubuoi/thoitiet.css">
+    <link rel="stylesheet" href="cssladaubuoi/layout.css">
+</head>
+<body >
+    <section class="section">
+        <div class="container" >
+            <ul id="grid">
+              
+            </ul>
+
+
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function thoitiet(){
+            var ulr = `https://api.openweathermap.org/data/2.5/forecast?q=Hanoi&appid=09a71427c59d38d6a34f89b47d75975c&units=metric`
+            fetch(ulr).then(js=>js.json())
+        
+            .then(data=>{
+                var luu = ``
+                var thoitiet = data.list
+                thoitiet.forEach(e => {
+                   
+                   
+                   var iteam = `
+                   <li class="box" >
+                        <div class="iteam">
+                            <div class="tren">
+                                <b>${e.dt_txt}</b>
+                                
+                            </div>
+                            <div class="duoi" >
+                                <div class="trai" >
+                                    <h1><b> ${e.main.temp} &degC</b></h1>
+                                    <h5><b>${e.weather[0].description}</b></h5>
+                                </div>
+                                <div class="phai">
+                                    <img src="https://openweathermap.org/img/wn/${e.weather[0].icon}@2x.png"/>
+                                </div>
+                            </div>
+                        </div>
+                    </li>`
+                
+                    luu += iteam
+                });
+                document.getElementById("grid").innerHTML = luu;
+              
+              
+              
+
+            })
+            
+
+        }
+        thoitiet()
+    </script>
+</body>
+</html>

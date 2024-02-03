@@ -1,0 +1,29 @@
+body{
+    background-image: url(/image/ricardo.jpg);
+}
+.box{
+    list-style: none; 
+    float: left;
+    width: calc(100%/6);
+    /* padding: 0 0px 0 20px; */
+    margin: 15px 0;
+    background-color: rgba(53, 109, 230, 0.473);
+    margin: 10px;
+  
+}
+
+.iteam.duoi{
+    padding: 100px;
+}
+.iteam .duoi .phai{
+    float: right;
+    /* padding-right: 30%;
+    padding-bottom: 20px; */
+  
+
+}
+.iteam .duoi .trai{
+    float: left;
+    padding-left: 20px;
+
+}

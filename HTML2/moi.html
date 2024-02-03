@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssladaubuoi/moi.css">
+    <link rel="stylesheet" href="cssladaubuoi/layout.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <ul id = "grid">
+                <li class="box">
+                    <div class="iteam">
+                        <img src="image/1895d6c9310fb46e43db0e39516e884b.jfif"/>
+                        <h2>ricador</h2>
+                        <p>10k</p>
+                    </div>                    
+                </li>
+                
+
+            </ul>
+            <ul id ="pagination">
+                
+            </ul>
+
+        </div>
+    </section>
+ 
+    <script type="text/javascript" >
+        function loadproduct(pg){
+            var skip = (pg-1)*12;
+            var ulr = `https://dummyjson.com/products?limit=12&skip=${skip}`;
+            fetch(ulr).then(js=>js.json())
+            .then(data=>{
+                
+                var list = data.products;
+                var gridhtml =``;
+                list.forEach(e => {
+                    var iteam = `<li class="box">
+                    <div class="iteam">
+                        <img src="${e.thumbnail}"/>
+                        <h2>${e.title}</h2>
+                        <p>${e.price}</p>
+                    </div>
+                </li>`
+                  
+                    gridhtml  += iteam;
+                    
+                  
+                });
+                document.getElementById("grid").innerHTML = gridhtml; // thay thế phần tử trên trong của"grid"
+                
+                
+                var total = data.total
+                var limit= 12
+                var page = parseInt(total/limit)
+                if (total%limit!= 0){
+                    page++;
+
+                }
+                var paginator_html = ``;
+                for(var i=1;i<=page;i++){
+                    var page_html = `<li><a onclick="loadProducts(${i})" href="#">${i}</a></li>`;
+                    paginator_html += page_html;
+                }
+                document.getElementById("pagination").innerHTML = paginator_html;
+            })
+        }
+        loadproduct(1)
+    </script>
+</body>
+</html>
