@@ -1,0 +1,94 @@
+body{
+    background-color:rgb(248, 249, 251)
+}
+
+header{
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+
+header>div>button{
+    width: 60%;
+    margin: 10px 0;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+
+}
+header>div>button>i{
+    padding-right: 20px;
+    
+    
+}
+
+
+
+header  #mot{
+
+    color: aliceblue;
+    background-color: rgb(66, 174, 236);
+
+}
+header  #hai{
+    
+    color: aliceblue;
+    background-color: rgb(64, 94, 158);
+
+    
+}
+
+
+header .faceand .button{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+header .faceand .button>i{
+    margin-right: 10px;
+    
+}
+
+.section{
+    width: 600px;
+    text-align: center;
+    margin: auto;
+}
+.section>div>input{
+    width: 50%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px ;
+    border: 1px solid black;
+}
+.section>div>select{
+    width: 50%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px ;
+    border: 1px solid black;
+}
+.section>div>{
+    width: 40px;
+    border:1px solid black ;
+    height: 40px;
+    
+}
+.section .account{
+    margin-top: 10px;
+}
+.section .dauvao>i{
+    background-color: rgb(232, 236, 239);
+ 
+    
+    padding: 10px;
+    border: 1px solid black;
+    
+}
+

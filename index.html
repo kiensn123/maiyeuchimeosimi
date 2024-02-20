@@ -4,104 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/kientra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <p>
-        Đoạn văn bản
-    </p>
-
-    <p>
-        <b>in đậm</b>
-        <i>in nghiêng</i>
-        <u>gạch chân</u>
-    </p>
-
-    <p>180<sup>o</sup>C</p>
-    <p>log<sub>2</sub>8=?</p>
-    <p><del>gạch ngang nè</del></p>
-    <p><br>xuong dong</p>
-    <p><span>không có tác dụng gì cả</span></p>
-
-    <a href="https://24h.com.vn" target="_blank">Link độc</a>
-    <p>
-       chèn ảnh
-       <img src = "image/an-ba-to-com.jpg" width = "600"   /> 
-    </p>
-    <p>
-       chèn video 
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/gjk82lWahe4?si=k3HdR28-x2WdDJHh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-    </p>
-    <p>
-       ảnh nhấn được
-       <a href = "https://24h.com.vn" target = "_blank"> <img src = "image/an-ba-to-com.jpg" width = "600"   /> </a> 
-    </p>
-    <p>
+    <section class="form-control" >
+        <header>
+            <h1><b>Create Account</b></h1>
+            <h5>Get started with your free account</h5>
+            
+            <div>
+                <button  type="button" class="button" id="mot" ><i class="fa-brands fa-twitter"></i> Login via Twitter</button>  
+            </div>
+            <div>
+                <button type="button" class="button" id="hai"><i class="fa-brands fa-facebook"></i>Login via facebook</button>
+            </div>
+            
+            
+            <div class="kengang">
+              
+              
+                <hr width="40%">
+            </div>
+    
+        </header>
         
-
-        tao trang con
-        hehee
-        <a href = "trancon.html">trancon</a>
-
-
-    </p>
-    <p>
-       DANHSACH
-       <ul> 
-            <li><a href = ""> trang chu </a> </li>
-            <li><a href = "trancon.html"> trangcon </a> </li>
-            <li><a href = "saumui.html"> trangcon </a> </li>
-
-
-       </ul>
-       danh sach  co thu tu
-       <ol>
-            <li> cut cho </li>
-            <li> ba to com</li>
-            <li> bun da rau ma</li>
-            <li> cam mi </li>
-
-
-
-       </ol>
-       du lieu danh sach nhieu thong tin
-       <table>
-            <thead>
-                <th> ten nguoi dep trai nhat vu tru </th>
-                <th> khach hang </th>
-                <th> sdt </th>
-                <th> mon dat </th>
-
-            <thead>
-
-            <tbody>
-                <tr>
-                    <td> kien </td>
-                    <td> buoidai </td>
-                    <td> dep trai </td>
-                    <td> cam mi </td>
-                </tr>
-                 <tr>
-                    <td> phi phai </td>
-                    <td> chim dai </td>
-                    <td> ngu  </td>
-                    <td> ccc </td>
-                    <td> sau mui </td>
-                </tr>
+        
+   
+        <section class="section">
+            <div class="dauvao">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="name" placeholder="Nhập tên của bạn" required size="20">
+            </div>
+            <div class="dauvao">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" placeholder="Nhập email của bạn" required size="20">
+            </div>
+            <div class="dauvao">
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" name="phone" id="phone" placeholder="Nhập số điện thoại" required pattern="[0-9]{10}">
+            </div>
+            <div class="dauvao">
+                <i class="fa-solid fa-house"></i>
+                <select id="chimto" >
+                    <option value="HN" > Hà nội</option>
+                    <option value="HB" > Hòa BÌnh</option>
+                    <option value="tt" > Thũng Lũng</option>
+                    <option value="ct" > Cổng trời</option>
+                </select>
+            </div>
+            <div class="dauvao">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="matkhau" id="matkhau" placeholder="Create password">
+            </div>
+            <div class="dauvao">
+                <i class="fa-solid fa-unlock"></i>
+                <input type="password" name="matkhau" id="matkhau" placeholder="Repet password">
+            </div>
+            <button style="background-color: rgb(0, 122, 255); width: 40%; height: 40px; border-radius: 10px; border: none; " type="button" class="button" id="mot" > Create Account</button>
+            <div class="account" >Have an account?<a href=""> Log In</a></div>
+        </section>
 
 
 
-            </tbody> 
-
-
-
-       </table>
-       
-    </p>
-
+    </section>
+    
 </body>
 </html>
